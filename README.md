@@ -75,3 +75,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Sandbox link:
 [Sand box](https://codesandbox.io/s/goofy-cherry-upvqu)
+
+### Netlify:
+[Netlify](https://resty-samer.netlify.app/)
