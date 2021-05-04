@@ -5,7 +5,7 @@ function Form(props) {
   const handleClick = async (e) => {
     e.preventDefault()
     const URL = e.target.URL.value;
-    const method = e.target.method.value;
+    // const method = e.target.method.value;
 
     try {
       let header;
