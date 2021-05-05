@@ -41,7 +41,7 @@ function Form(props) {
     <main>
       <form onSubmit={handleClick}>
         <label htmlFor="url">URL : </label>
-        <input type="text" name="URL" id="url" value = {props.api.URL} />
+        <input type="text" name="URL" id="url" defaultValue = {props.api.URL} />
         <button type="submit">GO!</button>
         <br />
         <input type="radio" name="method" value={"GET" || props.api.method} id="get" defaultChecked />
