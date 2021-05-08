@@ -14,6 +14,7 @@ const History = (props) => {
           return (
             <div onClick={handleAPI} key={index}>
               {api.method} {api.URL}
+             
             </div>
           )
         })}
