@@ -26,8 +26,13 @@ class App extends React.Component {
   }
 
   historyStorage = (data) => {
-    this.setState({ history: [...this.state.history, data] });
-    localStorage.setItem("API data", JSON.stringify(this.state.history));
+    let arr = this.state.history.filter((element) => {
+      return data.method === element.method && data.url === element.url;
+    });
+    if (!arr.length) {
+      this.setState({ history: [...this.state.history, data] });
+      localStorage.setItem("API data", JSON.stringify(this.state.history));
+    }
   }
 
   callback = (api) => {
@@ -40,6 +45,7 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
       <>
         <Form
@@ -47,6 +53,7 @@ class App extends React.Component {
           toggle={this.toggleLoading}
           storage={this.historyStorage}
           api={this.state.callback}
+          reRun = {this.props.location?.state}
         />
         <Results APIData={this.state} Loading={this.state.loading} />
         <div id="history">
