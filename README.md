@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### UML diagram:
-![UML diagram](public/lab29.png)
+![UML diagram](public/lab28.png)
 
 ### Sandbox link:
 [Sand box](https://codesandbox.io/s/goofy-cherry-upvqu)
